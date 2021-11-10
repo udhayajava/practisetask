@@ -10,5 +10,4 @@ public class Run {
         String jsonString = ReadExcel.convertObjects2JsonString(student);
         System.out.println(jsonString);
     }
-
 }
