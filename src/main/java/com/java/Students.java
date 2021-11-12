@@ -1,61 +1,59 @@
 package com.java;
-class Students {
+public class Students {
+        public int rollNum;
+        public String name;
+        public int age;
+        public int mark;
 
-        int rollNum;
-        String name;
-        int age;
-        int marks;
+    public Students() {
+    }
 
-        public Students() {
-            super();
+    public Students( int rollNum, String name,int age, int mark){
+        this.rollNum = rollNum;
+        this.name = name;
+        this.age = age;
+        this.mark = mark;
+    }
 
-        }
+        public int getRollNum () {
+        return rollNum;
+    }
 
-        public Students(int rollNum, String name, int age, int marks) {
-            this.rollNum = rollNum;
-            this.name = name;
-            this.age = age;
-            this.marks = marks;
-        }
+        public void setRollNum ( int rollNum){
+        this.rollNum = rollNum;
+    }
 
-        public int getRollNum(int rollNum) {
-            return rollNum;
-        }
+        public String getName () {
+        return name;
+    }
 
-        public void setRollNum(int rollNum) {
-            this.rollNum = rollNum;
-        }
+        public void setName (String name){
+        this.name = name;
+    }
 
-        public String getName(String name) {
-            return name;
-        }
+        public int getAge () {
+        return age;
+    }
 
-        public void setName(String name) {
-            this.name = name;
-        }
+        public void setAge ( int age){
+        this.age = age;
+    }
 
-        public int getAge(int age) {
-            return age;
-        }
-        public void setAge(int age) {
-            this.age = age;
-        }
+        public int getMark () {
+        return mark;
+    }
 
-        public int getMarks(int marks) {
-            return marks;
-        }
-
-        public void setMarks(int marks) {
-            this.marks = marks;
-        }
-
+        public void setMark ( int mark){
+        this.mark = mark;
+    }
         @Override
-        public String toString() {
-            return "\nStudents {RollNum=" + rollNum + "," +
-                    " name=" + name + ", " +
-                    "Mark=" + marks + ", " +
-                    "age=" + age + "}";
+        public String toString () {
+        return "Students{" +
+                "rollNum=" + rollNum +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", mark=" + mark +
+                '}';
+    }
 
-
-        }
     }

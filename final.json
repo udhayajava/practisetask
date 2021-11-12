@@ -1,0 +1,21 @@
+[ {
+  "rollNum" : 1,
+  "name" : "Abi",
+  "age" : 18,
+  "mark" : 55
+}, {
+  "rollNum" : 2,
+  "name" : "Ani",
+  "age" : 19,
+  "mark" : 56
+}, {
+  "rollNum" : 3,
+  "name" : "sky",
+  "age" : 19,
+  "mark" : 57
+}, {
+  "rollNum" : 4,
+  "name" : "Atom",
+  "age" : 19,
+  "mark" : 58
+} ]
