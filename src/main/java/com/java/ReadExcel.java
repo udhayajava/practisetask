@@ -15,17 +15,13 @@ import java.util.Scanner;
 public class ReadExcel {
     List<Students>list;
     String filePath ="C:\\Users\\Udhayakumar\\IdeaProjects\\practisetask\\Excel.xlsx";
+    FileInputStream inputStream;
+    XSSFWorkbook workbook;XSSFSheet sheet;
     public void  readExcelFile() {
         try {
-            FileInputStream inputStream = new FileInputStream(filePath);
-            XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
-            XSSFSheet sheet = workbook.getSheetAt(0);
-            Iterator<Sheet>sheetIterator=workbook.sheetIterator();
-            while (sheetIterator.hasNext()){
-                Sheet sheetName = sheetIterator.next();
-                System.out.println("Sheet name =====>" +sheetName.getSheetName());
-                System.out.println("---------------------------------------------------");
-            }
+            inputStream = new FileInputStream(filePath);
+            workbook= new XSSFWorkbook(inputStream);
+            sheet = workbook.getSheetAt(0);
             list = new LinkedList();
             Iterator rows = sheet.iterator();
             int rowNum = 0;

@@ -1,9 +1,9 @@
 package com.java;
 public class Students {
-        public int rollNum;
-        public String name;
-        public int age;
-        public int mark;
+        private int rollNum;
+        private String name;
+        private int age;
+        private int mark;
 
     public Students() {
     }
